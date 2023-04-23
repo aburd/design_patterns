@@ -1,0 +1,39 @@
+{
+  "name": "design-patterns",
+  "version": "0.0.1",
+  "description": "Design Patterns from Refactoring Guru",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aburd/design_patterns.git"
+  },
+  "keywords": [
+    "design",
+    "patterns",
+    "patterns",
+    "gof",
+    "gang",
+    "of",
+    "four",
+    "refactoring",
+    "guru"
+  ],
+  "author": "Aaron Burdick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aburd/design_patterns/issues"
+  },
+  "homepage": "https://github.com/aburd/design_patterns#readme",
+  "dependencies": {
+    "eslint": "^8.39.0",
+    "prettier": "^3.0.0-alpha.7-for-vscode",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.0",
+    "ts-node": "^10.9.1"
+  }
+}
