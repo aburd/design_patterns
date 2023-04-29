@@ -14,7 +14,7 @@ class BaseDialog implements Dialog {
         return "****\nSome button\n****"
       }
     }
-  } 
+  }
 
   render() {
     let button = this.createButton();
@@ -29,7 +29,7 @@ class ADialog extends BaseDialog {
         return "****\nSome A button\n****"
       }
     }
-  } 
+  }
 }
 
 class BDialog extends BaseDialog {
@@ -39,18 +39,19 @@ class BDialog extends BaseDialog {
         return "=====\nSome B button\n====="
       }
     }
-  } 
+  }
 }
 
-const env = process.env.ENVIRONMENT || "";
-let dialog: Dialog;
+export default function main([btnType]: string[]) {
+  let dialog: Dialog;
 
-if (env === "a") {
-  dialog = new ADialog(); 
-} else if (env === "b") {
-  dialog = new BDialog(); 
-} else {
-  dialog = new BaseDialog();
+  if (btnType === "a") {
+    dialog = new ADialog();
+  } else if (btnType === "b") {
+    dialog = new BDialog();
+  } else {
+    dialog = new BaseDialog();
+  }
+
+  console.log(dialog.render());
 }
-
-console.log(dialog.render());

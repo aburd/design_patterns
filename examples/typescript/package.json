@@ -2,9 +2,9 @@
   "name": "design-patterns",
   "version": "0.0.1",
   "description": "Design Patterns from Refactoring Guru",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "ts-node"
+    "start": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
